@@ -52,17 +52,15 @@
                         <li>Use the <strong>factory</strong> design pattern to handle statements.</li>
                         <li>Use indexes and <strong>LRU (Least recently used cache) Cache</strong> to improve this database system.</li>
                     </ul>
-            
-                <li class="projectName">Nachos Operating System Implementation in Java, Sep 2022 – Nov 2022</li>
+                
+                <li class="projectName">Fault-tolerance Scalable Cloud-Based File Storage service in Golang, Jan 2023 – Mar 2023</li>
                     <ul>
-                        <li>Implement and test multiple tasks in Nachos operating system.</li>
-                        <li>Complete the implementation of the <strong>Alarm class</strong>, including <strong>waitUntil(x), timerInterrupt(), and cancel()</strong>.</li>
-                        <li>Complete the implementation of <strong>KThread.join()</strong>.</li>
-                        <li>Implement <strong>condition variables</strong> using <strong>interrupt disable and restore</strong> to provide atomicity, including <strong>sleep(), wake(), wakeAll(), and sleepFor(long x)</strong>.</li>
-                        <li>Implement the <strong>Rendezvous</strong> class to provide a mechanism for threads to exchange values, using <strong>locks</strong> and <strong>condition variables</strong> to manage <strong>concurrency</strong>.</li>
-                        <li>Implement the file system calls <strong>create, open, read, write, close, unlink, exec, join, exit and halt</strong>.</li>
-                        <li>Implement support for <strong>multiprogramming</strong> by managing the allocation of pages of physical memory so that different processes do not overlap in their memory usage.</li>
-                        <li>Implement <strong>Demand Paging, Lazy Loading, and Page Pinning</strong>.</li>
+                        <li>Developed a <strong>fault tolerant, scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
+                        <li>A file in the server is broken into an ordered sequence of one or more blocks. Use the <strong>SHA-256 hash function</strong> for each block, and the set of hash values represents the file, and is referred to as the hash list.</li> 
+                        <li>Use <strong>protocol buffer</strong> for <strong>gRPC</strong>, and <strong>versioning</strong> and hash list for handling <strong>update conflicts</strong>(with some logics)</li>
+                        <li>A client program will create and maintain an <strong>index.db</strong> file in the base directory to help <strong>sync</strong> operation.</li>
+                        <li>Implement a mapping approach based on <strong>consistent hashing</strong> for block storage to make the server <strong>scalable</strong>.</li>
+                        <li>Make the server <strong>fault tolerant</strong> based on the <strong>RAFT distributed consensus protocol</strong>(implement the <strong>log replication</strong> part of the protocol)</li>
                     </ul>
             
                 <li class="projectName">Sliding Window Protocol in C, Jan 2023 – Feb 2023</li>
@@ -83,36 +81,19 @@
                         <li>Support <strong>ping</strong> and <strong>traceroute</strong> for both clients and servers, and download a file using HTTP from one of the app servers.</li>
                         <li>Implement <strong>Longest Prefix Match</strong> using <strong>Trie</strong>.</li>                                    
                     </ul>
-            
-                <li class="projectName">Huffman Coding in C++, Jan 2023 – Feb 2023</li>
+                
+                <li class="projectName">Nachos Operating System Implementation in Java, Sep 2022 – Nov 2022</li>
                     <ul>
-                        <li>Implement file compression and uncompression with Huffman coding.</li>
-                        <li>Use <strong>priority_queue</strong> for building Huffman tree which is a <strong>binary trie</strong> and supports encode and decode. </li>
-                        <li>Read data from files and write data to files using <strong>ifstream</strong> and <strong>ofstream</strong>.</li>
-                        <li>For compression, write enough information (a "file header") to the output file to enable the coding tree to be reconstructed when the file is read by the uncompress program. Using the Huffman coding tree, translate each byte from the input file into its code, and append these codes as a sequence of bits to the output file, after the header.</li>
-                        <li>For uncompression, read the file header at the beginning of the input file, and use it to reconstruct the Huffman coding tree. Moreover, read the file header at the beginning of the input file, and use it to reconstruct the Huffman coding tree.</li>
+                        <li>Implement and test multiple tasks in Nachos operating system.</li>
+                        <li>Complete the implementation of the <strong>Alarm class</strong>, including <strong>waitUntil(x), timerInterrupt(), and cancel()</strong>.</li>
+                        <li>Complete the implementation of <strong>KThread.join()</strong>.</li>
+                        <li>Implement <strong>condition variables</strong> using <strong>interrupt disable and restore</strong> to provide atomicity, including <strong>sleep(), wake(), wakeAll(), and sleepFor(long x)</strong>.</li>
+                        <li>Implement the <strong>Rendezvous</strong> class to provide a mechanism for threads to exchange values, using <strong>locks</strong> and <strong>condition variables</strong> to manage <strong>concurrency</strong>.</li>
+                        <li>Implement the file system calls <strong>create, open, read, write, close, unlink, exec, join, exit and halt</strong>.</li>
+                        <li>Implement support for <strong>multiprogramming</strong> by managing the allocation of pages of physical memory so that different processes do not overlap in their memory usage.</li>
+                        <li>Implement <strong>Demand Paging, Lazy Loading, and Page Pinning</strong>.</li>
                     </ul>
-
-                <li class="projectName">Graphs in C++, Feb 2023 – Mar 2023</li>
-                    <ul>
-                        <li>Use <strong>std::pair, std::vector, and std::unordered_map</strong> to create the instance variables I need.</li>
-                        <li>Implementing Basic Graph Operations(functions) that access basic properties of a graph: num_nodes(), nodes(), num_edges(), edge_weight(), num_neighbors(), and neighbors().</li>
-                        <li>Using the <strong>Breadth-First Search (BFS)</strong> algorithm to find an <strong>unweighted shortest path</strong>.</li>
-                        <li>Using the <strong>Dijkstra's Algorithm</strong> to find a <strong>weighted shortest path</strong>. (Used data structures: <strong>std::tuple, std::vector, std::unordered_map, std::priority_queue</strong>).</li>
-                        <li>Using the <strong>Breadth-First Search (BFS)</strong> algorithm to find <strong>connected components</strong>.</li>
-                        <li>Utilize the <strong>Disjoint Set</strong> data structure to find the <strong>Smallest Connecting Threshold</strong>.</li>
-                    </ul>
-        
-                <li class="projectName">Fault-tolerance Scalable Cloud-Based File Storage service in Golang, Jan 2023 – Mar 2023</li>
-                    <ul>
-                        <li>Developed a <strong>fault tolerant, scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
-                        <li>A file in the server is broken into an ordered sequence of one or more blocks. Use the <strong>SHA-256 hash function</strong> for each block, and the set of hash values represents the file, and is referred to as the hash list.</li> 
-                        <li>Use <strong>protocol buffer</strong> for <strong>gRPC</strong>, and <strong>versioning</strong> and hash list for handling <strong>update conflicts</strong>(with some logics)</li>
-                        <li>A client program will create and maintain an <strong>index.db</strong> file in the base directory to help <strong>sync</strong> operation.</li>
-                        <li>Implement a mapping approach based on <strong>consistent hashing</strong> for block storage to make the server <strong>scalable</strong>.</li>
-                        <li>Make the server <strong>fault tolerant</strong> based on the <strong>RAFT distributed consensus protocol</strong>(implement the <strong>log replication</strong> part of the protocol)</li>
-                    </ul>
-            
+                
                 <li class="projectName">Scalable Cloud-Based File Storage service in Golang, Jan 2023 – Mar 2023</li>
                     <ul>
                         <li>Developed a <strong>fault tolerant, scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
@@ -139,7 +120,26 @@
                         <li>Record is a 100 bytes binary key-value pair (key: 10-byte key, value: 90-byte value).</li>
                         <li>Each Server can send relevant records to peers, and receive records that belong to that server from peers.</li>
                     </ul>
-            
+
+                <li class="projectName">Huffman Coding in C++, Jan 2023 – Feb 2023</li>
+                    <ul>
+                        <li>Implement file compression and uncompression with Huffman coding.</li>
+                        <li>Use <strong>priority_queue</strong> for building Huffman tree which is a <strong>binary trie</strong> and supports encode and decode. </li>
+                        <li>Read data from files and write data to files using <strong>ifstream</strong> and <strong>ofstream</strong>.</li>
+                        <li>For compression, write enough information (a "file header") to the output file to enable the coding tree to be reconstructed when the file is read by the uncompress program. Using the Huffman coding tree, translate each byte from the input file into its code, and append these codes as a sequence of bits to the output file, after the header.</li>
+                        <li>For uncompression, read the file header at the beginning of the input file, and use it to reconstruct the Huffman coding tree. Moreover, read the file header at the beginning of the input file, and use it to reconstruct the Huffman coding tree.</li>
+                    </ul>
+
+                <li class="projectName">Graphs in C++, Feb 2023 – Mar 2023</li>
+                    <ul>
+                        <li>Use <strong>std::pair, std::vector, and std::unordered_map</strong> to create the instance variables I need.</li>
+                        <li>Implementing Basic Graph Operations(functions) that access basic properties of a graph: num_nodes(), nodes(), num_edges(), edge_weight(), num_neighbors(), and neighbors().</li>
+                        <li>Using the <strong>Breadth-First Search (BFS)</strong> algorithm to find an <strong>unweighted shortest path</strong>.</li>
+                        <li>Using the <strong>Dijkstra's Algorithm</strong> to find a <strong>weighted shortest path</strong>. (Used data structures: <strong>std::tuple, std::vector, std::unordered_map, std::priority_queue</strong>).</li>
+                        <li>Using the <strong>Breadth-First Search (BFS)</strong> algorithm to find <strong>connected components</strong>.</li>
+                        <li>Utilize the <strong>Disjoint Set</strong> data structure to find the <strong>Smallest Connecting Threshold</strong>.</li>
+                    </ul>
+        
                 <li class="projectName">Game Checkers in C++, Feb 2022 – Mar 2022</li>
                     <ul>
                         <li>Based on the rules of checkers, set up a <strong>Game framework</strong> and Piece class so that players can interact with the game by a few <strong>virtual functions</strong> offered by Game. (<strong>std::optional<T></strong> included)</li>
