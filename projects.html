@@ -96,7 +96,7 @@
                 
                 <li class="projectName">Scalable Cloud-Based File Storage service in Golang, Jan 2023 – Mar 2023</li>
                     <ul>
-                        <li>Developed a <strong>fault tolerant, scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
+                        <li>Developed a <strong>scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
                         <li>A file in the server is broken into an ordered sequence of one or more blocks. Use the <strong>SHA-256 hash function</strong> for each block, and the set of hash values represents the file, and is referred to as the hash list.</li> 
                         <li>Use <strong>protocol buffer</strong> for <strong>gRPC</strong>, and <strong>versioning</strong> and hash list for handling <strong>update conflicts</strong>(with some logics)</li>
                         <li>A client program will create and maintain an <strong>index.db</strong> file in the base directory to help <strong>sync</strong> operation.</li>
