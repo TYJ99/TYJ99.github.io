@@ -69,6 +69,10 @@ hr {
     flex-basis: 85%;
 }
 
+#topSection header a {
+    color:aliceblue;
+}
+
 #navUl {
     list-style-type: none;
     display: flex;

@@ -65,6 +65,10 @@ hr {
     /* flex-grow: 1; */
 }
 
+#topSection header a {
+    color:aliceblue;
+}
+
 #topSection nav {
     flex-basis: 85%;
 }
