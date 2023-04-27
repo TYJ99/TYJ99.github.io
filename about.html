@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yen-Ju Tseng's Website - about</title>
 
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="styleSheet/reset.css"> -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styleSheet/reset.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styleSheet/aboutStyle.css">
 </head>
@@ -30,6 +34,16 @@
                 <li><a href="./contact.html">Contact</a></li>
                 <!-- <li><a href="./testTag.html">TestTag</a></li> -->
             </ul>
+            <ul id="dropDownContent">
+                <li><a href="./index.html">Home</a></li>
+                <li id="currentPage"><a href="./about.html">About</a></li>
+                <li><a href="./education.html">Education</a></li>
+                <li><a href="./projects.html" aria-current="page">Projects</a></li>
+                <li><a href="./skillsLang.html">Skills&Languages</a></li>
+                <li><a href="./resumeCV.html">Resume/CV</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <img id="icon" src="./img/whiteMenu.png" />
         </nav>
     </section>
     <main>
@@ -38,12 +52,12 @@
                 <h2 id="currPage">About</h2>
             </header>
             <p id="leftMainContent">
-                Hi, my name is Yen-Ju Tseng. I'm currently pursuing master degree at UCSD ECE, and looking for a full-time job in the field of <strong>SDE</strong>.
+                Hi, my name is Yen-Ju Tseng. I'm currently pursuing master's degree at UCSD ECE, and looking for a full-time job in the field of <strong>SDE</strong>.
                 Through my undergraduate and graduate study, I have familiarized myself with C/C++, Java, Golang, and Python, 
                 and have some experience in computer networks, software development, front-end development, operating system, and programming. 
-                For example, I have fulfilled some projects, such as MySQL-like database(C++), Fault-tolerance scalable Dropbox-like file storage service(Golang), simple router(C), sliding window protocol(C), and so on.<br> See projects section for more details. 
+                For example, I have fulfilled some projects, such as MySQL-like database(C++), Fault-tolerance scalable Dropbox-like file storage service(Golang), simple router(C), sliding window protocol(C), and so on.<br> See the projects section for more details. 
                 <br><br>
-                Also, I am a hard-working, easy-going, enthusiastic, team player, and kind person. I love sport, most kinds, and cooking.
+                Also, I am a hard-working, self-motivated, easy-going, enthusiastic, team player, and kind person. I love sport, most kinds, and cooking.
                 <br><br>
 
                 Happy to connect and thanks.
@@ -107,6 +121,7 @@
         </section>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="./javascript/navbar.js"></script>
 </body>
 </html>
