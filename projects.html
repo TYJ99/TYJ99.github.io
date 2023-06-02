@@ -58,125 +58,129 @@
             <ul>
                 <li class="projectName">MySQL-like Relational Database System in C++17, <span class="projectDate">Apr 2022 – June 2022</span></li>
                     <ul>
-                        <li>Design and build a working relational database like MySQL using C++17.</li>
-                        <li>This system involved <strong>data interpretation, data manipulation, data querying, and showing table data results</strong>. Various software design patterns were used during development. Moreover, this database system is able to execute commands involving the indexes, rows, columns, tables, querying, views, and database.</li>
-                        <li>The database system is built upon the <strong>MVC(Model-View-Controller)</strong> application design pattern.</li>
-                        <li>Use <strong>Scanning, tokenizing</strong>, and <strong>parsing</strong> to handle user input.</li>
-                        <li>Use the <strong>chain-of-responsibility</strong> design pattern to handle processing of user provided commands.</li>
-                        <li>Use the <strong>factory</strong> design pattern to handle statements.</li>
-                        <li>Use indexes and <strong>LRU (Least recently used cache) Cache</strong> to improve this database system.</li>
+                        <li>Designed and constructed a robust relational database akin to MySQL using C++17.</li>
+                        <li>This system entailed <strong>interpreting, manipulating, querying, and presenting</strong> table data results. Incorporated diverse software design patterns throughout the development process. Furthermore, this database system proficiently executed commands encompassing indexes, rows, columns, tables, querying, views, and databases.</li>
+                        <li>Developed the database system based on the <strong>MVC (Model-View-Controller)</strong> application design pattern.</li>
+                        <li>Employed <strong>scanning, tokenizing</strong>, and <strong>parsing</strong> techniques proficiently to manage user input.</li>
+                        <li>Implemented the <strong>chain-of-responsibility</strong> design pattern to efficiently process user-provided commands.</li>
+                        <li>Employed the <strong>factory</strong> design pattern to seamlessly handle statements.</li>
+                        <li>Utilized indexes and <strong>LRU (Least Recently Used) Cache</strong> to optimize the performance of this database system.</li>
                     </ul>
                 
                 <li class="projectName">Fault-tolerance Scalable Cloud-Based File Storage service in Golang, <span class="projectDate">Jan 2023 - Mar 2023</span></li>
                     <ul>
-                        <li>Developed a <strong>fault tolerant, scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
-                        <li>A file in the server is broken into an ordered sequence of one or more blocks. Use the <strong>SHA-256 hash function</strong> for each block, and the set of hash values represents the file, and is referred to as the hash list.</li> 
-                        <li>Use <strong>protocol buffer</strong> for <strong>gRPC</strong>, and <strong>versioning</strong> and hash list for handling <strong>update conflicts</strong>(with some logics)</li>
-                        <li>A client program will create and maintain an <strong>index.db</strong> file in the base directory to help <strong>sync</strong> operation.</li>
-                        <li>Implement a mapping approach based on <strong>consistent hashing</strong> for block storage to make the server <strong>scalable</strong>.</li>
-                        <li>Make the server <strong>fault tolerant</strong> based on the <strong>RAFT distributed consensus protocol</strong>(implement the <strong>log replication</strong> part of the protocol)</li>
+                        <li>Developed a networked file storage application inspired by Dropbox. Facilitated <strong>concurrent</strong> connections from multiple clients to access a shared set of files on the server. Enabled client interaction with the service through <strong>gRPC</strong>.</li>
+                        <li>Divided files on the server into an ordered sequence of one or more blocks. Employed the <strong>SHA-256 hash function</strong> for each block, creating a hash list that represented the file.</li>
+                        <li>Utilized <strong>protocol buffers</strong> for <strong>gRPC</strong> communication and incorporated <strong>versioning</strong> and <strong>hash list</strong> techniques to handle update conflicts with logical strategies.</li>
+                        <li>Created and maintained an <strong>index.db</strong> file in the base directory of the client program to streamline <strong>synchronization</strong> operations.</li>
+                        <li>Implemented a mapping approach based on <strong>consistent hashing</strong> for efficient block storage and to ensure server <strong>scalability</strong>.</li>
+                        <li>Enhanced server reliability by integrating <strong>fault tolerance</strong> mechanisms based on the <strong>RAFT distributed consensus protocol</strong>, specifically focusing on the <strong>log replication</strong> aspect of the protocol.</li>                        
                     </ul>
             
                 <li class="projectName">Sliding Window Protocol in C, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
                     <ul>
-                        <li>Implementing communication between two or more hosts with <strong>sliding window protocol</strong> that uses <strong>selective repeat/retransmission</strong> and <strong>cumulative ACK</strong> to ensure the <strong>reliable in-order</strong> delivery of frames between hosts since frames sent on the network links can and will be corrupted in flight. (window size =8 on both ends)</li>
-                        <li>Sender hosts must transmit messages typed in at the command line to a corresponding receiver host.</li>
-                        <li>Receivers need to reassemble frames, retrieve the correct message that the sender had sent, and output it.</li>
-                        <li>Divide the messages which are larger than MAX_FRAME_SIZE (i.e. 64 bytes) into frames.</li>
-                        <li>Implement <strong>Error Detection Mechanism</strong> which is <strong>CRC-8</strong> on senders and receivers.</li>
-                        <li>Establish Connection before Sending Actual Data: SYN, SYN-ACK.</li>
-                        <li>Add <strong>sequence number</strong>(uint8_t) and the implementation continues to function correctly during the <strong>wrap-around scenario</strong>.</li>
-                        <li>A sender may communicate with only one receiver at a time, but a receiver must be able to handle frames from multiple senders at the same time.</li>
+                        
+                        <li>Implemented communication between two or more hosts using a robust <strong>sliding window protocol</strong> that employed <strong>selective repeat/retransmission</strong> and <strong>cumulative ACK</strong> to ensure the reliable in-order delivery of frames between hosts, accounting for potential frame corruption during network transmission. (Window size set to 8 on both ends)</li>
+                        <li>Required sender hosts to transmit command line input messages to corresponding receiver hosts.</li>
+                        <li>Reassembled frames at the receivers' end, accurately retrieved the intended messages sent by the sender, and produced the desired output.</li>
+                        <li>Partitioned messages larger than MAX_FRAME_SIZE (i.e., 64 bytes) into frames.</li>
+                        <li>Incorporated a powerful <strong>Error Detection Mechanism</strong> using <strong>CRC-8</strong> on both senders and receivers.</li>
+                        <li>Established connection prior to sending actual data using SYN, SYN-ACK.</li>
+                        <li>Introduced a <strong>sequence number</strong> (uint8_t) to ensure seamless functionality in <strong>wrap-around</strong> scenarios.</li>
+                        <li>Allowed a sender to communicate with only one receiver at a time, while receivers were capable of handling frames from multiple senders simultaneously.</li>
+
                     </ul>
            
                 <li class="projectName">Building a Simple Router in C, <span class="projectDate">Feb 2023 - Mar 2023</span></li>
                     <ul>
-                        <li>Building a simple router. It will receive raw Ethernet frames and we handle those packets with <strong>ARP request, ARP reply, ARP caching, ICMP</strong> (send messages back to a sending host), <strong>Switching, Longest Prefix Match, IP sanity-check</strong> (minimum length and checksum), and the other essential features for IP forwarding.</li>
-                        <li>Support <strong>ping</strong> and <strong>traceroute</strong> for both clients and servers, and download a file using HTTP from one of the app servers.</li>
-                        <li>Implement <strong>Longest Prefix Match</strong> using <strong>Trie</strong>.</li>                                    
+                        <li>Constructed a streamlined router capable of receiving raw Ethernet frames and efficiently handling various packet types, including <strong>ARP requests, ARP replies, ARP caching, ICMP</strong> (returning messages to the sending host), <strong>switching, longest prefix matching, IP sanity-check</strong> (ensuring minimum length and checksum), and other vital IP forwarding functionalities.</li>
+                        <li>Implemented support for <strong>ping</strong> and <strong>traceroute</strong> operations for both clients and servers, as well as enabled file downloads using HTTP from designated application servers.</li>
+                        <li>Successfully integrated a <strong>Trie-based</strong> implementation for <strong>Longest Prefix Match</strong>, ensuring optimal routing performance.</li>
+                        
                     </ul>
                 
                 <li class="projectName">Nachos Operating System Implementation in Java, <span class="projectDate">Sep 2022 - Nov 2022</span></li>
                     <ul>
-                        <li>Implement and test multiple tasks in Nachos operating system.</li>
-                        <li>Complete the implementation of the <strong>Alarm class</strong>, including <strong>waitUntil(x), timerInterrupt(), and cancel()</strong>.</li>
-                        <li>Complete the implementation of <strong>KThread.join()</strong>.</li>
-                        <li>Implement <strong>condition variables</strong> using <strong>interrupt disable and restore</strong> to provide atomicity, including <strong>sleep(), wake(), wakeAll(), and sleepFor(long x)</strong>.</li>
-                        <li>Implement the <strong>Rendezvous</strong> class to provide a mechanism for threads to exchange values, using <strong>locks</strong> and <strong>condition variables</strong> to manage <strong>concurrency</strong>.</li>
-                        <li>Implement the file system calls <strong>create, open, read, write, close, unlink, exec, join, exit and halt</strong>.</li>
-                        <li>Implement support for <strong>multiprogramming</strong> by managing the allocation of pages of physical memory so that different processes do not overlap in their memory usage.</li>
-                        <li>Implement <strong>Demand Paging, Lazy Loading, and Page Pinning</strong>.</li>
+                        
+                        <li>Implemented and rigorously tested multiple tasks in the Nachos operating system.</li>
+                        <li>Executed the development of the <strong>Alarm class</strong>, encompassing the implementation of <strong>waitUntil(x), timerInterrupt()</strong>, and <strong>cancel()</strong> functionalities. Additionally, successfully implemented <strong>KThread.join()</strong>.</li>
+                        <li>Employed <strong>interrupt disable and restore techniques</strong> to ensure atomicity while implementing <strong>condition variables</strong>. Incorporated <strong>sleep(), wake(), wakeAll()</strong>, and <strong>sleepFor(long x)</strong> methods.</li>
+                        <li>Orchestrated the creation of the <strong>Rendezvous</strong> class, utilizing <strong>locks</strong> and <strong>condition variables</strong> to establish a robust mechanism for thread <strong>synchronization</strong> and value exchange.</li>
+                        <li>Proficiently implemented essential file system calls, including <strong>create, open, read, write, close, unlink, exec, join, exit</strong>, and <strong>halt</strong>.</li>
+                        <li>Managed the allocation of physical memory pages to facilitate <strong>multiprogramming</strong>, ensuring optimal utilization and preventing memory overlap among different processes.</li>
+                        <li>Implemented advanced memory management techniques such as <strong>Demand Paging, Lazy Loading</strong>, and <strong>Page Pinning</strong>.</li>
+
                     </ul>
                 
                 <li class="projectName">Scalable Cloud-Based File Storage service in Golang, <span class="projectDate">Jan 2023 - Mar 2023</span></li>
                     <ul>
-                        <li>Developed a <strong>scalable, and cloud-based</strong> file storage service that is based on <strong>Dropbox</strong>. Multiple clients can concurrently connect to the server to access a common, shared set of files. A client can interact with the service via <strong>gRPC</strong>.</li>
-                        <li>A file in the server is broken into an ordered sequence of one or more blocks. Use the <strong>SHA-256 hash function</strong> for each block, and the set of hash values represents the file, and is referred to as the hash list.</li> 
-                        <li>Use <strong>protocol buffer</strong> for <strong>gRPC</strong>, and <strong>versioning</strong> and hash list for handling <strong>update conflicts</strong>(with some logics)</li>
-                        <li>A client program will create and maintain an <strong>index.db</strong> file in the base directory to help <strong>sync</strong> operation.</li>
-                        <li>Implement a mapping approach based on <strong>consistent hashing</strong> for block storage to make the server <strong>scalable</strong>.</li>
+                        <li>Developed a networked file storage application inspired by Dropbox. Facilitated <strong>concurrent</strong> connections from multiple clients to access a shared set of files on the server. Enabled client interaction with the service through <strong>gRPC</strong>.</li>
+                        <li>Divided files on the server into an ordered sequence of one or more blocks. Employed the <strong>SHA-256 hash function</strong> for each block, creating a hash list that represented the file.</li>
+                        <li>Utilized <strong>protocol buffers</strong> for <strong>gRPC</strong> communication and incorporated <strong>versioning</strong> and <strong>hash list</strong> techniques to handle update conflicts with logical strategies.</li>
+                        <li>Created and maintained an <strong>index.db</strong> file in the base directory of the client program to streamline <strong>synchronization</strong> operations.</li>
+                        <li>Implemented a mapping approach based on <strong>consistent hashing</strong> for efficient block storage and to ensure server <strong>scalability</strong>.</li>
                     </ul>
             
                 <li class="projectName">Building a Simple Web Server in Golang, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
                     <ul>
-                        <li>Implement a subset of the <strong>HTTP/1.1 protocol</strong> called TritonHTTP. It is a client/server protocol that is layered on top of the reliable stream-oriented transport protocol <strong>TCP</strong>. (Only implement the <strong>GET method</strong>)</li>
-                        <li>The server was implemented in a <strong>concurrent</strong> manner, so that it can process multiple client requests overlapping in time. (<strong>HTTP pipelining</strong>).</li>
-                        <li>The server has a mechanism (<strong>HTTP persistent connection</strong>) for better network throughput and efficiency.</li>
-                        <li>The client signals the last request by setting a “Connection: close” header to close the connection.</li>
-                        <li>The server implements a <strong>timeout mechanism (5 seconds)</strong> to know when it should close the connection.</li>
-                        <li>Implement virtual hosting by allowing TritonHTTP to host multiple servers. Each of these servers has a unique host name and maps to a unique document root directory on the physical server.</li>
+                        <li>Implemented a subset of the <strong>HTTP/1.1 protocol</strong> known as TritonHTTP. Developed a client/server protocol that was layered on top of the reliable stream-oriented transport protocol <strong>TCP</strong>. (Focused on implementing the <strong>GET method</strong>).</li>
+                        <li>Designed and implemented the server in a <strong>concurrent</strong> manner to enable simultaneous processing of multiple client requests, leveraging <strong>HTTP pipelining</strong> capabilities.</li>
+                        <li>Incorporated a <strong>mechanism for HTTP persistent connection</strong> in the server to enhance network throughput and efficiency.</li>
+                        <li>Implemented a client-side mechanism where the "Connection: close" header was used to signal the last request and initiate connection closure.</li>
+                        <li>Incorporated a <strong>timeout mechanism (set to 5 seconds)</strong> in the server to determine when to close a connection.</li>
+                        <li>Implemented virtual hosting in TritonHTTP, enabling the hosting of multiple servers. Each server was associated with a unique host name and mapped to a distinct document root directory on the physical server.</li>
                     </ul>
             
                 <li class="projectName">Networked Sort in Golang, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
                     <ul>
-                        <li>Implement a <strong>multi-node sorting program</strong> with <strong>sockets</strong> and Go’s net package.</li>
-                        <li>We will have multiple servers and each server has its own single input file. At the end of the networked sort process, each server will produce a sorted output file in ascending order with only records <strong>belonging to</strong>. The distributed sorting program will <strong>concurrently</strong> run on all servers.</li>
-                        <li>Record is a 100 bytes binary key-value pair (key: 10-byte key, value: 90-byte value).</li>
-                        <li>Each Server can send relevant records to peers, and receive records that belong to that server from peers.</li>
+                        <li>Developed a <strong>multi-node sorting program</strong> utilizing <strong>sockets</strong> and Go's net package.</li>
+                        <li>Implemented a distributed sorting process with multiple servers, each responsible for processing a single input file. The end result of the networked sort was a collection of sorted output files in ascending order, containing only records <strong>pertaining to</strong> that particular server. The distributed sorting program executed <strong>concurrently</strong> across all servers.</li>
+                        <li>Defined a record as a 100-byte binary key-value pair, consisting of a 10-byte key and a 90-byte value.</li>
+                        <li>Enabled each server to exchange relevant records with its peers, sending records that belong to other servers and receiving records specific to its own data set.</li>
                     </ul>
 
                 <li class="projectName">Huffman Coding in C++, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
                     <ul>
-                        <li>Implement file compression and uncompression with Huffman coding.</li>
-                        <li>Use <strong>priority_queue</strong> for building Huffman tree which is a <strong>binary trie</strong> and supports encode and decode. </li>
-                        <li>Read data from files and write data to files using <strong>ifstream</strong> and <strong>ofstream</strong>.</li>
-                        <li>For compression, write enough information (a "file header") to the output file to enable the coding tree to be reconstructed when the file is read by the uncompress program. Using the Huffman coding tree, translate each byte from the input file into its code, and append these codes as a sequence of bits to the output file, after the header.</li>
-                        <li>For uncompression, read the file header at the beginning of the input file, and use it to reconstruct the Huffman coding tree. Moreover, read the file header at the beginning of the input file, and use it to reconstruct the Huffman coding tree.</li>
+                        <li>Implemented file compression and uncompression utilizing Huffman coding.</li>
+                        <li>Utilized <strong>priority_queue</strong> to construct a Huffman tree, which served as a <strong>binary trie</strong> and supported encoding and decoding operations.</li>
+                        <li>Read data from files and wrote data to files using <strong>ifstream</strong> and <strong>ofstream</strong>.</li>
+                        <li>For compression, wrote sufficient information (referred to as a "file header") to the output file, enabling the reconstruction of the coding tree during the file reading process in the uncompress program. Leveraged the Huffman coding tree to translate each byte from the input file into its corresponding code, and appended these codes as a bit sequence to the output file, following the header.</li>
+                        <li>For uncompression, read the file header located at the beginning of the input file, and utilized it to reconstruct the Huffman coding tree. Additionally, retrieved the file header at the beginning of the input file and utilized it to reconstruct the Huffman coding tree.</li>
                     </ul>
 
                 <li class="projectName">Graphs in C++, <span class="projectDate">Feb 2023 - Mar 2023</span></li>
                     <ul>
-                        <li>Use <strong>std::pair, std::vector, and std::unordered_map</strong> to create the instance variables I need.</li>
-                        <li>Implementing Basic Graph Operations(functions) that access basic properties of a graph: num_nodes(), nodes(), num_edges(), edge_weight(), num_neighbors(), and neighbors().</li>
-                        <li>Using the <strong>Breadth-First Search (BFS)</strong> algorithm to find an <strong>unweighted shortest path</strong>.</li>
-                        <li>Using the <strong>Dijkstra's Algorithm</strong> to find a <strong>weighted shortest path</strong>. (Used data structures: <strong>std::tuple, std::vector, std::unordered_map, std::priority_queue</strong>).</li>
-                        <li>Using the <strong>Breadth-First Search (BFS)</strong> algorithm to find <strong>connected components</strong>.</li>
-                        <li>Utilize the <strong>Disjoint Set</strong> data structure to find the <strong>Smallest Connecting Threshold</strong>.</li>
+                        <li>Utilized <strong>std::pair, std::vector, and std::unordered_map</strong> to instantiate the necessary instance variables.</li>
+                        <li>Implemented essential graph operations (functions) that accessed fundamental properties of a graph, such as num_nodes(), nodes(), num_edges(), edge_weight(), num_neighbors(), and neighbors().</li>
+                        <li>Applied the <strong>Breadth-First Search (BFS)</strong> algorithm to identify an <strong>unweighted shortest path</strong>.</li>
+                        <li>Employed the <strong>Dijkstra's Algorithm</strong> to determine a <strong>weighted shortest path</strong>, utilizing data structures such as <strong>std::tuple, std::vector, std::unordered_map, and std::priority_queue</strong>.</li>
+                        <li>Utilized the <strong>Breadth-First Search (BFS)</strong> algorithm to identify <strong>connected components</strong>.</li>
+                        <li>Implemented the <strong>Disjoint Set</strong> data structure to identify the <strong>Smallest Connecting Threshold</strong>.</li>
                     </ul>
         
                 <li class="projectName">Game Checkers in C++, <span class="projectDate">Feb 2022 - Mar 2022</span></li>
                     <ul>
-                        <li>Based on the rules of checkers, set up a <strong>Game framework</strong> and Piece class so that players can interact with the game by a few <strong>virtual functions</strong> offered by Game. (<strong>std::optional<T></strong> included)</li>
-                        <li><strong>Visualize</strong> the checkerboard on each step to see the current game status when two players compete against each other in the game.</li>
-                        <li>Using a programming principle of <strong>inversion of control (IoC)</strong> to plug in two <strong>self-designed checker-bots</strong> that compete in a Game of Checkers to the Game framework and show the final result.</li>
-                        <li>Design a checker-bot and try to find the best move per turn.</li>
+                        <li>Developed a robust <strong>Game framework</strong> and Piece class that adhered to the rules of checkers, enabling players to interact with the game through a set of <strong>virtual functions</strong> provided by the Game class. (<strong>std::optional<T></strong> utilized)</li>
+                        <li><strong>Visualized</strong> the checkerboard at each step to provide real-time updates on the game's progress as two players competed against each other.</li>
+                        <li>Implemented the programming principle of <strong>inversion of control (IoC)</strong> to seamlessly integrate two <strong>custom-designed checker-bots</strong> into the Game framework, allowing them to compete against each other in a Game of Checkers and displaying the final result.</li>
+                        <li>Devised an optimized checker-bot strategy, identifying the optimal move to make on each turn.</li>
                     </ul>
             
                 <li class="projectName">Non-compressing Archival Storage System in C++, <span class="projectDate">Jan 2022 - Feb 2022</span></li>
                     <ul>
-                        <li>Create a new Archive file or open a pre-existing Archive file which will read/write documents as <strong>sequence of fixed size blocks</strong> in binary mode using C++ <strong>fstream, ofstream, and ifstream</strong>.</li>
-                        <li>Implement 6 major <strong>actions</strong> that the Archive system supports: <strong>add, extract, remove</strong>(permanently), <strong>list</strong>, performing a diagnostic <strong>dump</strong> of all the blocks in the file, and <strong>compact</strong>(remove empty blocks from Archive).</li>
-                        <li>Handle the blocks which belong to the document that is written to Archive file as <strong>Doubly linked list</strong> to have the correct order and position.</li>
-                        <li>Since each block is composed of metadata and payload, use <strong>std::map</strong> to minimize metadata and maximize payload to optimize the memory efficiency.</li>
-                        <li>Apply <strong>Observer Pattern</strong> to the Archive to register one or more "observers" of the Archive. Observers will be notified when the Archive performs an action(add, extract, etc.).</li>
+                        <li>Developed a robust Archive system that allowed for the creation of new Archive files or the opening of pre-existing ones. The system efficiently read and wrote documents as a <strong>sequence of fixed-size blocks</strong> in binary mode using C++ <strong>fstream, ofstream, and ifstream</strong>.</li>
+                        <li>Implemented six major <strong>actions</strong> supported by the Archive system: <strong>add, extract, remove</strong> (permanently), <strong>list</strong>, performing a diagnostic <strong>dump</strong> of all the blocks in the file, and <strong>compact</strong> (removing empty blocks from the Archive).</li>
+                        <li>Managed the blocks associated with each document within the Archive as a <strong>Doubly linked list</strong>, ensuring the correct order and position.</li>
+                        <li>Optimized memory efficiency by utilizing a <strong>std::map</strong> to minimize metadata and maximize payload for each block, which consisted of both metadata and payload.</li>
+                        <li>Implemented the <strong>Observer Pattern</strong> within the Archive system, allowing the registration of one or more "observers" that would be notified whenever the Archive performed an action such as adding, extracting, or modifying data.</li>
                     </ul>
             
                 <li class="projectName">Build Our Own String Class in C++ (Without Using std::string), <span class="projectDate">Dec 2021 - Jan 2022</span></li>
                     <ul>
-                        <li>Use an <strong>Aspect-Oriented Programming (AOP)</strong>. Instead of building one (large) class, assemble the String class from several smaller, "special-purpose" classes, like <strong>BufferManager, Searchable, and Sortable</strong>.</li>
-                        <li>BufferManager as a base class to handle input String or const char*, which means our new String class is compatible with old-school C-strings.</li>
-                        <li>Create several useful methods in BufferManager, such as <strong>expand()</strong> and <strong>compact()</strong> to handle possible operations on String, such as <strong>append, insert, replace, remove, and find</strong>, and make BufferManager be able to interact with String(Include <strong>std::unique_ptr</strong>). Moreover, use <strong>Adapter Pattern</strong> to make an <strong>adapter</strong> so that we can handle both String and const char* in only one function when we try to implement those operations.</li>
-                        <li>Create a useful method in <strong>Searchable</strong> to implement the <strong>find()</strong> method(operation), which will allow a user to search within the given string for a character, or sub-string.</li>
+                        <li>Utilized <strong>Aspect-Oriented Programming (AOP)</strong> to construct the String class by assembling smaller, specialized classes such as <strong>BufferManager, Searchable, and Sortable</strong>, instead of creating one large class.</li>
+                        <li>Implemented BufferManager as a base class within the String class to handle input String or const char*, ensuring compatibility with traditional C-strings.</li>
+                        <li>Developed various essential methods in BufferManager, including <strong>expand()</strong> and <strong>compact()</strong>, to facilitate operations on String objects such as <strong>append, insert, replace, remove, and find</strong>. Incorporated <strong>Adapter Pattern</strong> to create an adapter that seamlessly handles both String objects and const char* in a unified function implementation.</li>
+                        <li>Implemented a specialized method in <strong>Searchable</strong> to enable the <strong>find()</strong> operation, empowering users to search for specific characters or sub-strings within a given String.</li>
                     </ul>            
 
             </ul>            
