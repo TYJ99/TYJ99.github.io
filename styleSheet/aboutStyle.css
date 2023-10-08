@@ -26,6 +26,11 @@ a {
     text-decoration: none;
 }
 
+#LinkedIn {
+    text-decoration: underline;
+    color: bisque;
+}
+
 h3 {
     margin: 0;
 	padding: 0;
@@ -45,6 +50,10 @@ body {
 hr {
     margin-left: 0;
     margin-right: 0;
+}
+
+strong {
+    color:bisque;
 }
 
 #topSection {
@@ -218,18 +227,35 @@ main {
 
 #downloadResume {
     display: inline-block;
-    width: 12ch;
-    height: 7ex;
-    color:blue;
-    background-color: aliceblue;
+    /* width: 12ch; */
+    /* height: 7ex; */
+    width: fit-content;
+    height: fit-content;
+    color:aqua;
+    /* background-color: aliceblue; */
     transition: 0.5s;
 }
 
 #downloadResume:hover{
-    background-color: aqua;
-    color: darkblue;
-    border-radius: 50%;
+    /* background-color: aqua; */
+    color:cornflowerblue;
+    /* border-radius: 50%; */
+    
 }
+
+.fitOneLine {
+    
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.rightResume {
+    /* font-size: small; */
+    text-align: left;
+    margin:5%;
+}
+
+
 
 /* #helloMyName {
     font-size: 300%;

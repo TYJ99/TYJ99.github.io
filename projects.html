@@ -56,7 +56,7 @@
         <section id="leftMain">
 
             <ul>
-                <li class="projectName">MySQL-like Relational Database System in C++17, <span class="projectDate">Apr 2022 – June 2022</span></li>
+                <!-- <li class="projectName">MySQL-like Relational Database System in C++17, <span class="projectDate">Apr 2022 - June 2022</span></li>
                     <ul>
                         <li>Designed and constructed a robust relational database akin to MySQL using C++17, showcasing flawless performance with seamless handling of <strong>15000+</strong> data entries.</li>
                         <li>This system entailed <strong>interpreting, manipulating, querying, and presenting</strong> table data results. Incorporated diverse software design patterns throughout the development process. Furthermore, this database system proficiently executed commands encompassing indexes, rows, columns, tables, querying, views, and databases.</li>
@@ -65,9 +65,39 @@
                         <li>Implemented the <strong>chain-of-responsibility</strong> design pattern to efficiently process user-provided commands.</li>
                         <li>Employed the <strong>factory</strong> design pattern to seamlessly handle statements.</li>
                         <li>Enhanced the performance of the database system by incorporating <strong>indexes</strong> and an <strong>LRU (Least Recently Used) Cache</strong>, resulting in an impressive optimization of approximately <strong>20%</strong>.</li>
+                    </ul> -->
+                <article class="oddProject">
+                <li class="projectName">Unsplash Image Android App (Kotlin, Clean Architecture, Room, Paging 3, Hilt, Retrofit), <span class="projectDate fitOneLine">08/2023 - 09/2023</span></li>
+                    <ul>    
+                        <li>Reduced code maintenance efforts due to MVVM with Clean Architecture, resulting in a highly modular and scalable codebase.</li>
+                        <li>Crafted UI with Jetpack Compose, using LazyColumn for efficient image browsing and Compose Navigation for a clear flow.</li>
+                        <li>Integrated ViewModel with Flow, ensuring real-time updates to the UI and enhancing user engagement.</li>
+                        <li>Reduced network usage by 30% and improved data loading for 1000+ entries from both network sources and a local Room Database by
+                            35% through implementing pagination with Paging 3, improving the app performance and responsiveness.</li>
+                        <li>Implemented a Remote Mediator to cache network data in the local Room database, ensuring offline access to cached data.</li>
+                        <li>Reduced latency in asynchronous operations by utilizing Coroutines, enhancing user experience responsiveness. </li>
+                        <li>Utilized Retrofit with Moshi to seamlessly interact with the Unsplash RESTful API, ensuring fast and reliable data retrieval.</li>
+                        <li>Reduced code complexity by 30% via efficient dependency injection with Hilt, enhancing code maintainability and scalability.</li>
+
                     </ul>
-                
-                <li class="projectName">Distribute Systems Development (Java, Kafka, Zookeeper, MongoDB, Google Cloud Platform), <span class="projectDate">June 2023 - July 2023</span></li>
+                </article>
+
+                <article class="evenProject">
+                <li class="projectName">Chat Android App (Client/Server) (Kotlin, Clean Architecture, Koin, Ktor, Hilt, MongoDB), <span class="projectDate">06/2023 - 07/2023</span></li>
+                    <ul>
+                        <li>Engineered a robust, scalable chat server with Ktor, Koin, and MongoDB, harnessing the power of the KMongo toolkit.</li>
+                        <li>Managed 10+ concurrent connections through the implementation of a robust WebSocket-based communication system.</li>
+                        <li>Reduced code complexity by 30% via dependency injection with Koin and Hilt, enhancing code maintainability and scalability.</li>
+                        <li>Employs a customizable routing mechanism for precise request handling.</li>
+                        <li>Developed a robust Android chat app with MVVM and Clean Architecture, boasting a declarative UI with Jetpack Compose.</li>
+                        <li>Integrated ViewModel with Flow, ensuring real-time updates to the UI and enhancing user engagement.</li>
+                        <li>Ensured a secure and efficient connection between Android chat client and server using HttpClient and WebSocketSession.</li>
+                        <li>Achieved server-client interoperability, optimizing data exchange efficiency through serialization techniques with Ktor.</li>
+                    </ul>
+                </article>
+                     	      
+                <article class="oddProject">
+                <li class="projectName">Distribute Systems Development (Java, Kafka, Zookeeper, MongoDB, Google Cloud Platform), <span class="projectDate">06/2023 - 07/2023</span></li>
                 <ul>
                     <li>Established and deployed a distributed system with <strong>Java</strong> on <strong>Google Cloud Platform</strong>, achieving <strong>scalability</strong> and <strong>fault tolerance</strong>.</li>
                     <li>Utilized <strong>Kafka</strong> as message brokers with <strong>Zookeeper</strong> for <strong>scalability</strong> and enhanced the <strong>fault tolerance</strong> by leader algorithm. </li>
@@ -75,39 +105,121 @@
                     <li>Enhanced system performance and reliability by incorporating <strong>load balancers</strong> to avoid bottlenecks and ensure higher <strong>availability</strong>.</li>
                     <li>Launched <strong>MongoDB</strong> with <strong>replication set (master/slave architecture)</strong> for high availability and <strong>data sharding</strong> for scalability.</li>
                 </ul>
-                
-                <li class="projectName">Fault-tolerance Scalable Cloud-Based File Storage service (Go, SQLite, API, Backend, gRPC), <span class="projectDate">Feb 2023 - Mar 2023</span></li>
+                </article>
+
+                <article class="evenProject">
+                <li class="projectName">Weather Forecast Android App (Kotlin, Clean Architecture, Hilt, Retrofit, Coroutine), <span class="projectDate">05/2023 - 06/2023</span></li>
                     <ul>
-                        <li>Developed a <strong>Dropbox-like, scalable, networked</strong> file storage application, facilitating <strong>concurrent</strong> connections from multiple clients to access a shared set of files on the server. Utilized <strong>gRPC</strong> for client interaction and managed <strong>100+</strong> files.</li>
-                        <li>Divided files on the server into an ordered sequence of one or more blocks. Employed the <strong>SHA-256 hash function</strong> for each block, creating a hash list that represented the file.</li>
-                        <li>Utilized <strong>protocol buffers</strong> for <strong>gRPC</strong> communication and incorporated <strong>versioning</strong> and <strong>hash list</strong> techniques to handle update conflicts with logical strategies.</li>
-                        <li>Created and maintained an <strong>index.db</strong> file in the base directory of the client program to streamline <strong>synchronization</strong> operations.</li>
-                        <li>Implemented a mapping approach based on <strong>consistent hashing</strong> for efficient block storage and to ensure server <strong>scalability</strong>.</li>
-                        <li>Enhanced server reliability by integrating <strong>fault tolerance</strong> mechanisms based on the <strong>RAFT distributed consensus protocol</strong>, specifically focusing on the <strong>log replication</strong> aspect of the protocol.</li>                        
+                        <li>Reduced code maintenance efforts due to MVVM with Clean Architecture, resulting in a highly modular and scalable codebase.</li>
+                        <li>Crafted UI with Jetpack Compose, employing LazyRow for efficient weather forecast browsing.</li>
+                        <li>Integrated ViewModel with Flow, ensuring real-time updates to the UI and enhancing user engagement.</li>
+                        <li>Implemented real-time push notifications for weather alerts.</li>
+                        <li>Leveraged FusedLocationProviderClient within Coroutine(suspendCancellableCoroutine) to obtain precise location data.</li>
+                        <li>Utilized Retrofit with Moshi to seamlessly interact with the Open Meteo RESTful API for real-time weather data.</li>
+                        <li>Reduced code complexity by 30% via efficient dependency injection with Hilt, enhancing code maintainability and scalability.</li>
                     </ul>
-            
-                <li class="projectName">Sliding Window Protocol in C, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
+                </article>
+                
+                <article class="oddProject">
+                <li class="projectName">Fault-tolerance Scalable Cloud-Based File Storage service (Go, SQLite, API, Backend, gRPC), <span class="projectDate">02/2023 - 04/2023</span></li>
+                    <ul>
+                        <li>Engineered a robust, Dropbox-inspired, fault-tolerant cloud-based file storage solution with both client and server components.</li>
+                        <li>Supported simultaneous access for 10+ users, effectively managing 100+ files.</li>
+                        <li>Achieved a reduction in data retrieval time by implementing file segmentation and SHA-256 hashing for faster access for users.</li>
+                        <li>Reduced update conflicts by 99% by implementing efficient versioning and hash list strategies, ensuring smoother synchronization.</li>
+                        <li>Enabled seamless data exchange, improved interoperability, and enhanced scalability by leveraging protocol buffers for gRPC.</li>
+                        <li>Optimized user experience by streamlining synchronization with an index.db file in the client's base directory.</li>
+                        <li>Achieved efficient block storage and server scalability by implementing a mapping approach based on consistent hashing.</li>
+                        <li>Ensured server reliability with fault tolerance mechanisms based on the RAFT distributed consensus protocol.</li>
+                    </ul>
+                </article>
+                
+                <article class="evenProject">
+                <li class="projectName">Simple Router in C, <span class="projectDate">02/2023 - 03/2023</span></li>
+                    <ul>
+                        <!-- <li>Constructed a streamlined router capable of receiving raw Ethernet frames and efficiently handling various packet types, including <strong>ARP requests, ARP replies, ARP caching, ICMP</strong> (returning messages to the sending host), <strong>switching, longest prefix matching, IP sanity-check</strong> (ensuring minimum length and checksum), and other vital IP forwarding functionalities.</li>
+                        <li>Implemented support for <strong>ping</strong> and <strong>traceroute</strong> operations for both clients and servers, as well as enabled file downloads using HTTP from designated application servers.</li>
+                        <li>Integrated a <strong>Trie-based</strong> implementation for <strong>Longest Prefix Match</strong>, resulting in a remarkable <strong>90% improvement</strong> over the brute force method for large routing tables (i.e., 1000 IPv4 addresses).</li> -->
+
+                        <li>Constructed a streamlined router capable of receiving raw Ethernet frames and efficiently handling various packet types, including ARP
+                            requests, ARP replies, ARP caching, ICMP (returning messages to the sending host), switching, longest prefix matching, IP sanity
+                            check (ensuring minimum length and checksum), and other vital IP forwarding functionalities.</li>
+                        <li>Implemented ping and traceroute operations, and enabled file downloads using HTTP from designated application servers.</li>
+                        <li>Implemented Trie-based Longest Prefix Match, achieving a 90% improvement over the brute force method for 1000+ IPv4 addresses.</li>
+
+                    </ul>
+                </article>
+                
+                <article class="oddProject">
+                <li class="projectName">Graphs in C++, <span class="projectDate">02/2023 - 03/2023</span></li>
+                    <ul>
+                        <li>Utilized <strong>std::pair, std::vector, and std::unordered_map</strong> to instantiate the necessary instance variables.</li>
+                        <li>Implemented essential graph operations (functions) that accessed fundamental properties of a graph, such as num_nodes(), nodes(), num_edges(), edge_weight(), num_neighbors(), and neighbors().</li>
+                        <li>Applied the <strong>Breadth-First Search (BFS)</strong> algorithm to identify an <strong>unweighted shortest path</strong>.</li>
+                        <li>Employed the <strong>Dijkstra's Algorithm</strong> to determine a <strong>weighted shortest path</strong>, utilizing data structures such as <strong>std::tuple, std::vector, std::unordered_map, and std::priority_queue</strong>.</li>
+                        <li>Utilized the <strong>Breadth-First Search (BFS)</strong> algorithm to identify <strong>connected components</strong>.</li>
+                        <li>Implemented the <strong>Disjoint Set</strong> data structure to identify the <strong>Smallest Connecting Threshold</strong>.</li>
+                    </ul>
+                </article>
+
+                <article class="evenProject">
+                <li class="projectName">Sliding Window Protocol in C, <span class="projectDate">01/2023 - 02/2023</span></li>
                     <ul>
                         
-                        <li>Implemented communication between two or more hosts using a robust <strong>sliding window protocol</strong> that employed <strong>selective repeat/retransmission</strong> and <strong>cumulative ACK</strong> to ensure the reliable in-order delivery of frames between hosts, accounting for potential frame corruption during network transmission. (Window size set to 8 on both ends)</li>
+                        <!-- <li>Implemented communication between two or more hosts using a robust <strong>sliding window protocol</strong> that employed <strong>selective repeat/retransmission</strong> and <strong>cumulative ACK</strong> to ensure the reliable in-order delivery of frames between hosts, accounting for potential frame corruption during network transmission. (Window size set to 8 on both ends)</li>
                         <li>Required sender hosts to transmit command line input messages to corresponding receiver hosts.</li>
                         <li>Reassembled frames at the receivers' end, accurately retrieved the intended messages sent by the sender, and produced the desired output.</li>
                         <li>Partitioned messages larger than MAX_FRAME_SIZE (i.e., 64 bytes) into frames.</li>
                         <li>Incorporated a powerful <strong>Error Detection Mechanism</strong> using <strong>CRC-8</strong> on both senders and receivers.</li>
                         <li>Established connection prior to sending actual data using SYN, SYN-ACK.</li>
                         <li>Introduced a <strong>sequence number</strong> (uint8_t) to ensure seamless functionality in <strong>wrap-around</strong> scenarios.</li>
-                        <li>Allowed a sender to communicate with only one receiver at a time, while receivers were capable of handling frames from multiple senders simultaneously.</li>
+                        <li>Allowed a sender to communicate with only one receiver at a time, while receivers were capable of handling frames from multiple senders simultaneously.</li> -->
+                        
+                        <li>Implemented communication between two or more hosts using a sliding window protocol (Window size = 8) that employed selective 
+                        repeat/retransmission and cumulative ACK to guarantee reliable in-order delivery of frames between hosts. Each sender could only 
+                        communicate with one receiver at a time, while a receiver must be able to handle frames from multiple senders concurrently.</li>
+                        <li>Established reliable communication through the segmentation of messages exceeding MAX_FRAME_SIZE (i.e., 64 bytes) into frames.</li>
+                        <li>Achieved a 99% accuracy rate in message reconstruction, ensuring the reliable retrieval of original messages.</li>
+                        <li>Ensured data integrity and effective communication between senders and receivers through the implementation of CRC-8 error detection.</li>
 
                     </ul>
-           
-                <li class="projectName">Simple Router in C, <span class="projectDate">Feb 2023 - Mar 2023</span></li>
-                    <ul>
-                        <li>Constructed a streamlined router capable of receiving raw Ethernet frames and efficiently handling various packet types, including <strong>ARP requests, ARP replies, ARP caching, ICMP</strong> (returning messages to the sending host), <strong>switching, longest prefix matching, IP sanity-check</strong> (ensuring minimum length and checksum), and other vital IP forwarding functionalities.</li>
-                        <li>Implemented support for <strong>ping</strong> and <strong>traceroute</strong> operations for both clients and servers, as well as enabled file downloads using HTTP from designated application servers.</li>
-                        <li>Integrated a <strong>Trie-based</strong> implementation for <strong>Longest Prefix Match</strong>, resulting in a remarkable <strong>90% improvement</strong> over the brute force method for large routing tables (i.e., 1000 IPv4 addresses).</li>
-                    </ul>
+                </article>
                 
-                <li class="projectName">Nachos Operating System Implementation in Java, <span class="projectDate">Sep 2022 - Nov 2022</span></li>
+                <article class="oddProject">
+                <li class="projectName">Simple Web Server in Golang, <span class="projectDate">01/2023 - 02/2023</span></li>
+                    <ul>
+                        <li>Implemented a subset of the <strong>HTTP/1.1 protocol</strong> known as TritonHTTP. Developed a client/server protocol that was layered on top of the reliable stream-oriented transport protocol <strong>TCP</strong>. (Focused on implementing the <strong>GET method</strong>).</li>
+                        <li>Designed and implemented the server in a <strong>concurrent</strong> manner to enable simultaneous processing of multiple client requests, leveraging <strong>HTTP pipelining</strong> capabilities.</li>
+                        <li>Incorporated a <strong>mechanism for HTTP persistent connection</strong> in the server to enhance network throughput and efficiency.</li>
+                        <li>Implemented a client-side mechanism where the "Connection: close" header was used to signal the last request and initiate connection closure.</li>
+                        <li>Incorporated a <strong>timeout mechanism (set to 5 seconds)</strong> in the server to determine when to close a connection.</li>
+                        <li>Implemented virtual hosting in TritonHTTP, enabling the hosting of multiple servers. Each server was associated with a unique host name and mapped to a distinct document root directory on the physical server.</li>
+                    </ul>
+                </article>
+
+                <article class="evenProject">
+                <li class="projectName">Networked Sort in Golang, <span class="projectDate">01/2023 - 02/2023</span></li>
+                    <ul>
+                        <li>Developed a <strong>multi-node sorting program</strong> utilizing <strong>sockets</strong> and Go's net package.</li>
+                        <li>Implemented a distributed sorting process with multiple servers, each responsible for processing a single input file. The end result of the networked sort was a collection of sorted output files in ascending order, containing only records <strong>pertaining to</strong> that particular server. The distributed sorting program executed <strong>concurrently</strong> across all servers.</li>
+                        <li>Defined a record as a 100-byte binary key-value pair, consisting of a 10-byte key and a 90-byte value.</li>
+                        <li>Enabled each server to exchange relevant records with its peers, sending records that belong to other servers and receiving records specific to its own data set.</li>
+                    </ul>
+                </article>
+
+                <article class="oddProject">
+                <li class="projectName">Huffman Coding in C++, <span class="projectDate">01/2023 - 02/2023</span></li>
+                    <ul>
+                        <li>Implemented file compression and uncompression utilizing Huffman coding.</li>
+                        <li>Utilized <strong>priority_queue</strong> to construct a Huffman tree, which served as a <strong>binary trie</strong> and supported encoding and decoding operations.</li>
+                        <li>Read data from files and wrote data to files using <strong>ifstream</strong> and <strong>ofstream</strong>.</li>
+                        <li>For compression, wrote sufficient information (referred to as a "file header") to the output file, enabling the reconstruction of the coding tree during the file reading process in the uncompress program. Leveraged the Huffman coding tree to translate each byte from the input file into its corresponding code, and appended these codes as a bit sequence to the output file, following the header.</li>
+                        <li>For uncompression, read the file header located at the beginning of the input file, and utilized it to reconstruct the Huffman coding tree. Additionally, retrieved the file header at the beginning of the input file and utilized it to reconstruct the Huffman coding tree.</li>
+                    </ul>
+                </article>
+
+                <article class="evenProject">
+                <li class="projectName">Nachos Operating System Implementation in Java, <span class="projectDate">09/2022 - 11/2022</span></li>
                     <ul>
                         
                         <li>Implemented and rigorously tested multiple tasks in the Nachos operating system.</li>
@@ -119,62 +231,43 @@
                         <li>Implemented advanced memory management techniques such as <strong>Demand Paging, Lazy Loading</strong>, and <strong>Page Pinning</strong>.</li>
 
                     </ul>
+                </article>
                 
-                <li class="projectName">Scalable Cloud-Based File Storage service in Golang, <span class="projectDate">Jan 2023 - Mar 2023</span></li>
+                <article class="oddProject"> 
+                <li class="projectName">MySQL-like Relational Database System in C++17, <span class="projectDate">04/2022 - 06/2022</span></li>
+                    <ul>
+                        <li>Developed a MySQL-like relational database in C++17, proficient in interpreting, manipulating, querying, and presenting table data, 
+                            delivering flawless performance while seamlessly managing 15,000+ data entries.</li>
+                        <li>Achieved a reduction in code maintenance efforts due to the MVC architectural pattern, leading to increased development efficiency. </li>
+                        <li>Reduced parsing errors through proficient scanning, tokenizing, and parsing techniques, ensuring more accurate query processing.</li>
+                        <li>Implemented the chain-of-responsibility design pattern to efficiently process user-provided commands.</li>
+                        <li>Employed the factory design pattern to seamlessly handle statements.</li>
+                        <li>Implemented data encoding to files and decoding from files to enable persistent storage and efficient data management.</li>
+                        <li>Reduced average query execution time by 20% through the implementation of indexes and LRU Cache, resulting in faster data retrieval.</li>
+                    </ul>
+                </article>
+                
+                <!-- <li class="projectName">Scalable Cloud-Based File Storage service in Golang, <span class="projectDate">Jan 2023 - Mar 2023</span></li>
                     <ul>
                         <li>Developed a networked file storage application inspired by Dropbox. Facilitated <strong>concurrent</strong> connections from multiple clients to access a shared set of files on the server. Enabled client interaction with the service through <strong>gRPC</strong>.</li>
                         <li>Divided files on the server into an ordered sequence of one or more blocks. Employed the <strong>SHA-256 hash function</strong> for each block, creating a hash list that represented the file.</li>
                         <li>Utilized <strong>protocol buffers</strong> for <strong>gRPC</strong> communication and incorporated <strong>versioning</strong> and <strong>hash list</strong> techniques to handle update conflicts with logical strategies.</li>
                         <li>Created and maintained an <strong>index.db</strong> file in the base directory of the client program to streamline <strong>synchronization</strong> operations.</li>
                         <li>Implemented a mapping approach based on <strong>consistent hashing</strong> for efficient block storage and to ensure server <strong>scalability</strong>.</li>
-                    </ul>
+                    </ul> -->
             
-                <li class="projectName">Simple Web Server in Golang, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
-                    <ul>
-                        <li>Implemented a subset of the <strong>HTTP/1.1 protocol</strong> known as TritonHTTP. Developed a client/server protocol that was layered on top of the reliable stream-oriented transport protocol <strong>TCP</strong>. (Focused on implementing the <strong>GET method</strong>).</li>
-                        <li>Designed and implemented the server in a <strong>concurrent</strong> manner to enable simultaneous processing of multiple client requests, leveraging <strong>HTTP pipelining</strong> capabilities.</li>
-                        <li>Incorporated a <strong>mechanism for HTTP persistent connection</strong> in the server to enhance network throughput and efficiency.</li>
-                        <li>Implemented a client-side mechanism where the "Connection: close" header was used to signal the last request and initiate connection closure.</li>
-                        <li>Incorporated a <strong>timeout mechanism (set to 5 seconds)</strong> in the server to determine when to close a connection.</li>
-                        <li>Implemented virtual hosting in TritonHTTP, enabling the hosting of multiple servers. Each server was associated with a unique host name and mapped to a distinct document root directory on the physical server.</li>
-                    </ul>
-            
-                <li class="projectName">Networked Sort in Golang, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
-                    <ul>
-                        <li>Developed a <strong>multi-node sorting program</strong> utilizing <strong>sockets</strong> and Go's net package.</li>
-                        <li>Implemented a distributed sorting process with multiple servers, each responsible for processing a single input file. The end result of the networked sort was a collection of sorted output files in ascending order, containing only records <strong>pertaining to</strong> that particular server. The distributed sorting program executed <strong>concurrently</strong> across all servers.</li>
-                        <li>Defined a record as a 100-byte binary key-value pair, consisting of a 10-byte key and a 90-byte value.</li>
-                        <li>Enabled each server to exchange relevant records with its peers, sending records that belong to other servers and receiving records specific to its own data set.</li>
-                    </ul>
-
-                <li class="projectName">Huffman Coding in C++, <span class="projectDate">Jan 2023 - Feb 2023</span></li>
-                    <ul>
-                        <li>Implemented file compression and uncompression utilizing Huffman coding.</li>
-                        <li>Utilized <strong>priority_queue</strong> to construct a Huffman tree, which served as a <strong>binary trie</strong> and supported encoding and decoding operations.</li>
-                        <li>Read data from files and wrote data to files using <strong>ifstream</strong> and <strong>ofstream</strong>.</li>
-                        <li>For compression, wrote sufficient information (referred to as a "file header") to the output file, enabling the reconstruction of the coding tree during the file reading process in the uncompress program. Leveraged the Huffman coding tree to translate each byte from the input file into its corresponding code, and appended these codes as a bit sequence to the output file, following the header.</li>
-                        <li>For uncompression, read the file header located at the beginning of the input file, and utilized it to reconstruct the Huffman coding tree. Additionally, retrieved the file header at the beginning of the input file and utilized it to reconstruct the Huffman coding tree.</li>
-                    </ul>
-
-                <li class="projectName">Graphs in C++, <span class="projectDate">Feb 2023 - Mar 2023</span></li>
-                    <ul>
-                        <li>Utilized <strong>std::pair, std::vector, and std::unordered_map</strong> to instantiate the necessary instance variables.</li>
-                        <li>Implemented essential graph operations (functions) that accessed fundamental properties of a graph, such as num_nodes(), nodes(), num_edges(), edge_weight(), num_neighbors(), and neighbors().</li>
-                        <li>Applied the <strong>Breadth-First Search (BFS)</strong> algorithm to identify an <strong>unweighted shortest path</strong>.</li>
-                        <li>Employed the <strong>Dijkstra's Algorithm</strong> to determine a <strong>weighted shortest path</strong>, utilizing data structures such as <strong>std::tuple, std::vector, std::unordered_map, and std::priority_queue</strong>.</li>
-                        <li>Utilized the <strong>Breadth-First Search (BFS)</strong> algorithm to identify <strong>connected components</strong>.</li>
-                        <li>Implemented the <strong>Disjoint Set</strong> data structure to identify the <strong>Smallest Connecting Threshold</strong>.</li>
-                    </ul>
-        
-                <li class="projectName">Checkers in C++, <span class="projectDate">Feb 2022 - Mar 2022</span></li>
+                <article class="evenProject">
+                <li class="projectName">Checkers in C++, <span class="projectDate">02/2022 - 03/2022</span></li>
                     <ul>
                         <li>Developed a robust <strong>Game framework</strong> and Piece class that adhered to the rules of checkers, enabling players to interact with the game through a set of <strong>virtual functions</strong> provided by the Game class. (<strong>std::optional<T></strong> utilized)</li>
                         <li><strong>Visualized</strong> the checkerboard at each step to provide real-time updates on the game's progress as two players competed against each other.</li>
                         <li>Implemented the programming principle of <strong>inversion of control (IoC)</strong> to seamlessly integrate two <strong>custom-designed checker-bots</strong> into the Game framework, allowing them to compete against each other in a Game of Checkers and displaying the final result.</li>
                         <li>Devised an optimized checker-bot strategy, identifying the optimal move to make on each turn.</li>
                     </ul>
+                </article>
             
-                <li class="projectName">Non-compressing Archival Storage System in C++, <span class="projectDate">Jan 2022 - Feb 2022</span></li>
+                <article class="oddProject">
+                <li class="projectName">Non-compressing Archival Storage System in C++, <span class="projectDate">01/2022 - 02/2022</span></li>
                     <ul>
                         <li>Developed a robust Archive system that allowed for the creation of new Archive files or the opening of pre-existing ones. The system efficiently read and wrote documents as a <strong>sequence of fixed-size blocks</strong> in binary mode using C++ <strong>fstream, ofstream, and ifstream</strong>.</li>
                         <li>Implemented six major <strong>actions</strong> supported by the Archive system: <strong>add, extract, remove</strong> (permanently), <strong>list</strong>, performing a diagnostic <strong>dump</strong> of all the blocks in the file, and <strong>compact</strong> (removing empty blocks from the Archive).</li>
@@ -182,14 +275,17 @@
                         <li>Optimized memory efficiency by utilizing a <strong>std::map</strong> to minimize metadata and maximize payload for each block, which consisted of both metadata and payload.</li>
                         <li>Implemented the <strong>Observer Pattern</strong> within the Archive system, allowing the registration of one or more "observers" that would be notified whenever the Archive performed an action such as adding, extracting, or modifying data.</li>
                     </ul>
+                </article>
             
-                <li class="projectName">Our Own String Class in C++ (Without Using std::string), <span class="projectDate">Dec 2021 - Jan 2022</span></li>
+                <article class="evenProject">
+                <li class="projectName">Our Own String Class in C++ (Without Using std::string), <span class="projectDate">12/2021 - 01/2022</span></li>
                     <ul>
                         <li>Utilized <strong>Aspect-Oriented Programming (AOP)</strong> to construct the String class by assembling smaller, specialized classes such as <strong>BufferManager, Searchable, and Sortable</strong>, instead of creating one large class.</li>
                         <li>Implemented BufferManager as a base class within the String class to handle input String or const char*, ensuring compatibility with traditional C-strings.</li>
                         <li>Developed various essential methods in BufferManager, including <strong>expand()</strong> and <strong>compact()</strong>, to facilitate operations on String objects such as <strong>append, insert, replace, remove, and find</strong>. Incorporated <strong>Adapter Pattern</strong> to create an adapter that seamlessly handles both String objects and const char* in a unified function implementation.</li>
                         <li>Implemented a specialized method in <strong>Searchable</strong> to enable the <strong>find()</strong> operation, empowering users to search for specific characters or sub-strings within a given String.</li>
-                    </ul>            
+                    </ul>    
+                </article>        
 
             </ul>            
 

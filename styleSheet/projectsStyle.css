@@ -137,7 +137,7 @@ main {
 
 #leftMain {
     display: flex;
-    flex-basis: 80%;
+    flex-basis: 90%;
     flex-direction: column;
     justify-content: flex-start;    
     overflow-x: hidden;
@@ -156,7 +156,7 @@ main {
 #headers {
     display: flex;
     flex-direction: row;
-    /* margin-left: 10%; */
+    margin-left: 5%;
     text-align: start;
     font-size: 150%;
 }
@@ -229,27 +229,27 @@ main {
     animation-name: slidein;
 } */
 
-strong {
+/* strong {
     color: rgb(162, 242, 108);
-}
+} */
 
 li {
-    font-size: 150%;
+    font-size: 100%;
 }
 
 .projectName {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    font-size: 150%;
+    font-size: 120%;
     font-weight: bold;
-    color: aqua;
+    color:#0b123f;
 }
 
 .projectDate {
     font-size: 60%;
     font-weight: bold;
-    color: aqua;
+    color: 0b123f;
 }
 
 #profilePhoto img{
@@ -298,6 +298,11 @@ li {
     border-radius: 50%;
 } */
 
+.fitOneLine {
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+
 #footerSection1 {
     width: 100%;
     display: flex;
@@ -329,6 +334,22 @@ li {
 .mediaImg {
     width: 25px;
     height: 25px;
+}
+
+.oddProject {
+    padding: 3%;
+    margin: 3%;
+    background-color: antiquewhite;
+    color: #0b123f;
+    /* border-radius: 5%; */
+}
+
+.evenProject {
+    padding: 3%;
+    margin: 3%;
+    background-color: aqua;
+    color: #0b123f;
+    /* border-radius: 5%; */
 }
 
 @media (min-width: 320px) {

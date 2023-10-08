@@ -250,29 +250,46 @@ button:active {
 
 #media {
     /* flex-basis: 70%; */
-    text-align: end;
+    /* text-align:center; */
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .mediaImg {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
 
 #downloadResume {
     display: inline-block;
-    text-align: center;
-    width: 9ch;
-    height: 6ch;
-    padding: 3%;
-    color:blue;
-    background-color: aliceblue;
+    /* width: 12ch; */
+    /* height: 7ex; */
+    width: fit-content;
+    height: fit-content;
+    color:aqua;
+    /* background-color: aliceblue; */
     transition: 0.5s;
 }
 
 #downloadResume:hover{
-    background-color: aqua;
-    color: darkblue;
-    border-radius: 50%;
+    /* background-color: aqua; */
+    color:cornflowerblue;
+    /* border-radius: 50%; */
+    
+}
+
+.fitOneLine {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 5%;
+}
+
+.rightResume {
+    font-size: 150%;
+    text-align: left;
+    /* margin-top:10%; */
 }
 
 #contactEmail {

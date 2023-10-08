@@ -145,6 +145,10 @@ main {
     font-size: 1.5rem;
 }
 
+#leftMainContent li {
+    margin: 5%;
+}
+
 /* .contentLi a::selection, #download h1::selection {
     background-color: bisque;
     color: #060a23;
@@ -238,18 +242,32 @@ main {
 
 #downloadResume {
     display: inline-block;
-    width: auto;
-    height: auto;
-    padding: 5%;
-    color:blue;
-    background-color: aliceblue;
+    /* width: 12ch; */
+    /* height: 7ex; */
+    width: fit-content;
+    height: fit-content;
+    color:aqua;
+    /* background-color: aliceblue; */
     transition: 0.5s;
 }
 
 #downloadResume:hover{
-    background-color: aqua;
-    color: darkblue;
-    border-radius: 50%;
+    /* background-color: aqua; */
+    color:cornflowerblue;
+    /* border-radius: 50%; */
+    
+}
+
+.fitOneLine {
+    
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.rightResume {
+    /* font-size: small; */
+    text-align: left;
+    margin:5%;
 }
 
 /* #helloMyName {

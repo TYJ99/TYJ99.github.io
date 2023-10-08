@@ -243,6 +243,11 @@ main {
     font-size: 1.2rem;
 }
 
+.fitOneLine {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 #footerSection1 {
     width: 100%;
     display: flex;
